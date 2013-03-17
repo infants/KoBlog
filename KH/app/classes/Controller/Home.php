@@ -4,6 +4,7 @@ class Controller_Home extends Controller {
 
   public function action_index()
   {
-    echo "Strādā";
+    echo "Sanāca!";
+    echo Session::instance()->id();
   }
 }

@@ -105,6 +105,12 @@ Kohana::$log->attach(new Log_File(APPPATH.'logs'));
 Kohana::$config->attach(new Config_File);
 
 /**
+ * My cnf for site
+ */
+Session::$default = 'database';
+Cookie::$salt     = 'Ubersaals';
+
+/**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
