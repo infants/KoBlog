@@ -1,10 +1,14 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Home extends Controller {
+class Controller_Home extends Controller_Template {
+
+  public $template = 'template';
 
   public function action_index()
   {
-    echo "Sanāca!";
-    echo Session::instance()->id();
+    $posts = ORM::factory('Post')->find_all();
+    $this->template->content = View::factory('posts')
+      ->bind('posts', $posts);
+  
   }
 }
