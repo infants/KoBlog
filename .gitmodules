@@ -1,0 +1,12 @@
+[submodule "KH/core"]
+	path = KH/core
+	url = git://github.com/kohana/core.git
+[submodule "KH/modules/auth"]
+	path = KH/modules/auth
+	url = git://github.com/kohana/auth.git
+[submodule "KH/modules/orm"]
+	path = KH/modules/orm
+	url = git://github.com/kohana/orm.git
+[submodule "KH/modules/database"]
+	path = KH/modules/database
+	url = git://github.com/infants/database.git
