@@ -1,3 +1,6 @@
 KH/app/cache/*
 KH/app/logs/*
+KH/app/config/*
+KH/modules/*
+KH/core/*
 log/*

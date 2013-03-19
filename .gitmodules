@@ -10,3 +10,9 @@
 [submodule "KH/modules/database"]
 	path = KH/modules/database
 	url = git://github.com/infants/database.git
+[submodule "KH/modules/markdown"]
+	path = KH/modules/markdown
+	url = git://github.com/aptgraph/kohana-markdown.git
+[submodule "KH/modules/oauth"]
+	path = KH/modules/oauth
+	url = git@github.com:infants/oauth.git

@@ -1,0 +1,11 @@
+html body {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #393939;
+}
+#content {
+  width: 960px;
+  margin: 0px auto;
+}
