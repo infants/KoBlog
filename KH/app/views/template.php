@@ -6,6 +6,8 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400&subset=latin-ext'
     rel='stylesheet'
     type='text/css'>
+  <script href='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    type='text/javascript'></script>
   <link href='/assets/css/kube.css' rel='stylesheet' type='text/css'>
   <link href='/assets/css/style.css' rel='stylesheet' type='text/css'>
 </head>
@@ -14,7 +16,7 @@
 <div id='header'>
   <div id='navi'>
     <ul>
-      <li><?=HTML::anchor('', 'Sākums')?></li>
+      <li><?=HTML::anchor('', 'Sākums', array('name'=>'top'))?></li>
       <li><?=HTML::anchor('', 'Kautkas')?></li> 
       <li><?=HTML::anchor('', 'Vēl kaut kas!')?></li>
       <li><?=HTML::anchor('about', 'Par mani')?></li>

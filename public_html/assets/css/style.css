@@ -15,7 +15,7 @@ html body {
   width: 60%;
   min-width: 480px;
   border-top: 3px solid #ffffff;
-  padding-top: 15px;
+  padding-bottom: 30px;
 }
 #header {
   width: 100%;
@@ -46,7 +46,7 @@ html body {
 #navi ul li {
   float: left;
   color: #404040;
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 
 li a, li a:hover, li a:visited {
@@ -58,3 +58,36 @@ li a, li a:hover, li a:visited {
 li a:hover {
   color: red;
 }
+
+.post {
+  margin: 0 10px 10px 15px;
+}
+.post h2 {
+  padding: 0 25px 0 35px;
+}
+.post h2 a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #ff6900;
+}
+.post h2 a:hover {
+  text-decoration: underline;
+}
+.post h5 {
+  text-decoration: none;
+  color: #404040;
+  padding: 0 25px 0 60px;
+  font-weight: normal;
+  font-size: 12px;
+}
+.post h5 a {
+  color: #ff6900;
+  font-size: 14px;
+  text-decoration: none;
+}
+.post p {
+  width: 95%;
+  text-indent: 25px;
+}
+  

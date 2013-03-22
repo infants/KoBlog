@@ -10,8 +10,12 @@ class Controller_Post extends Controller_Template {
     $post = ORM::factory('Post', $id);
     if ($post->loaded())
     {
+      $comments = ORM::factory('Comment')
+        ->where('post_id', '=', $id)
+        ->find_all();
       $this->template->content = View::factory('view')
-        ->bind('post', $post);
+        ->bind('post', $post)
+        ->bind('comments', $comments);
     }
     else
     {
