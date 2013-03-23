@@ -2,8 +2,6 @@
 
 class Controller_Post extends Controller_Template {
 
-  public $template = 'template';
-
   public function action_view()
   {
     $id = $this->request->param('id');
@@ -13,7 +11,7 @@ class Controller_Post extends Controller_Template {
       $comments = ORM::factory('Comment')
         ->where('post_id', '=', $id)
         ->find_all();
-      $this->template->content = View::factory('view')
+      $this->template->content = View::factory('View')
         ->bind('post', $post)
         ->bind('comments', $comments);
     }

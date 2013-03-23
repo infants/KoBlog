@@ -11,15 +11,30 @@ class Controller_User extends Controller_Template {
       try
       {
         $user = ORM::factory('User')
-          ->values($this->request->post(), array('username','password'))
+          ->values($this->request->post(), array('username','email','password'))
           ->create();
+        $this->template->content = View::factory('User/Success');
       }
       catch (ORM_Validation_Exception $e)
       {
-        throw new Kohana_Exception('Something is wrong');
+        throw new Kohana_Validation_Exception(
+          'Something is wrong.'.$e->getMessage()
+        );
       }
     } else {
       $this->template->content = View::factory('User/Register');
+    }
+  }
+
+  public function action_profile()
+  {
+    if (Auth::instance()->logged_in())
+    {
+      $this->template->content = View::factory('User/Profile');
+    }
+    else
+    {
+      $this->redirect('user/register');
     }
   }
 }

@@ -2,21 +2,19 @@
 
 class Controller_Home extends Controller_Template {
 
-  public $template = 'template';
-
   public function action_index()
   {
     $posts = ORM::factory('Post')
       ->order_by('created', 'DESC')
       ->find_all();
-    $this->template->content = View::factory('posts')
+    $this->template->content = View::factory('Posts')
       ->bind('posts', $posts);
   
   }
 
   public function action_new()
   {
-    $this->template->content = View::factory('new');
+    $this->template->content = View::factory('New');
   }
 
   public function action_process()
