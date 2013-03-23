@@ -3,17 +3,16 @@
 <head>
   <title>Blogs</title>
   <meta charset='utf-8'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400&subset=latin-ext'
-    rel='stylesheet'
-    type='text/css'>
-  <script href='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
-    type='text/javascript'></script>
-  <script src='/assets/js/nicEdit.js' type='text/javascript'></script>
-  <link href='/assets/css/kube.css' rel='stylesheet' type='text/css'>
-  <link href='/assets/css/style.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
 
+<?php foreach($stylesheets as $stylesheet):?>
+  <?=HTML::style($stylesheet)."\n"?>
+<?php endforeach;?>
+<?php foreach($scripts as $script):?>
+  <?=HTML::script($script)."\n"?>
+<?php endforeach;?>
+</head>
+
+<body>
 <div id='header'>
   <div id='top'>
     <div id='logo'><img src='/assets/img/logo.png' /></div>
