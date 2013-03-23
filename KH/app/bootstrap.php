@@ -121,7 +121,7 @@ Kohana::modules(array(
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'minion'     => MODPATH.'minion',     // CLI Tasks
 	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-  'markdown'   => MODPATH.'markdown',
+  'darkmown'   => MODPATH.'darkmown',
   // 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
   'oauth'      => MODPATH.'oauth',

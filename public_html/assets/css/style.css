@@ -1,5 +1,6 @@
 html body {
   width: 100%;
+  min-width: 480px;
   min-height: 100%;
   padding: 0;
   margin: 0;
@@ -24,7 +25,6 @@ html body {
 }
 #navi {
   position: relative;
-  top: 60px;
   padding: 0;
   margin: 0px auto;
   width: 60%;
@@ -37,10 +37,41 @@ html body {
 
 }
 
+#top {
+  height: 60px;
+  width: 60%;
+  min-width: 480px;
+  padding: 0;
+  margin: 0 auto;
+}
+#logo {
+  float: left;
+  width: 135px;
+  height: 60px;
+}
+#logo img {
+  height: 40px;
+  position: relative;
+  top: 10px;
+  left: 35px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+#userarea {
+  height: 60px;
+  width: 200px;
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
 #navi ul {
   list-style: none;
   height: 30px;
-  padding: 10px 0px;
+  padding: 10px 0px 0px;
+  margin: 0;
   float: left;
 }
 #navi ul li {
@@ -90,4 +121,4 @@ li a:hover {
   width: 95%;
   text-indent: 25px;
 }
-  
+
