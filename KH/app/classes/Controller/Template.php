@@ -2,7 +2,7 @@
 
 class Controller_Template extends Kohana_Controller_Template {
 
-  public $template = 'template';
+  public $template = 'Template';
 
   public function before()
   {
