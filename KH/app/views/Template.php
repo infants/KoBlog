@@ -17,7 +17,7 @@
   <div id='top'>
     <div id='logo'><img src='/assets/img/logo.png' /></div>
     <div id='userarea'>
-      <?=HTML::anchor('profile', 'Sveiks!')?>
+      <?=View::factory('User/Area')?>
     </div>
   </div>
   <div id='navi'>

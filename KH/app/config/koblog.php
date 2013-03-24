@@ -8,7 +8,7 @@ return array(
   ),
 
   'stylesheets' => array(
-    'http://fonts.googleapis.com/css?family=Open+Sans:400italic&subset=latin-ext',
+    'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400&subset=latin-ext',
     '/assets/css/kube.css',
     '/assets/css/style.css',
   ),
